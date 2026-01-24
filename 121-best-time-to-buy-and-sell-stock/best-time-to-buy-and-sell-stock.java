@@ -3,7 +3,7 @@ class Solution {
         int buyPrice = prices[0];
         int profit = 0;
         for(int i = 1; i < prices.length; i++){
-            if(buyPrice > prices[i] && prices[i] != prices[prices.length-1]){
+            if(buyPrice > prices[i]){
                 buyPrice = prices[i];
             }
             // sell
