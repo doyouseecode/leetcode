@@ -12,12 +12,10 @@ class Solution {
 
 
         public ListNode removeNthFromEnd(ListNode head, int n) {
-        // 1 2 3 4 5, n = 2
-        // length = 5
-        // 1 2 3 5
         int len = length(head);
         if(len == n){
-            return head.next;
+            head = head.next;
+            return head;
         }
 
         ListNode temp = head;
@@ -26,7 +24,6 @@ class Solution {
         }
 
         temp.next = temp.next.next;
-        // list.size--;
 
         return head;
     }
