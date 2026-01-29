@@ -11,8 +11,8 @@
  */
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        int headASize = 1;
-        int headBSize = 1;
+        int headASize = 0;
+        int headBSize = 0;
 
         ListNode headALink = headA;
         ListNode headBLink = headB;
